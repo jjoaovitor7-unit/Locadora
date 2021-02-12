@@ -2,47 +2,21 @@ using System;
 
 namespace poo.src {
     public abstract class Item {
-        public string titulo;
-        public int anoLancamento;
-        public string comentario;
+        public string Titulo { set; get; }
+        public int AnoLancamento { set; get; }
+        public string Comentario { set; get; }
 
-        public Item() {
-            
-        }
+        public Item() { }
 
         public Item(string _titulo, int _anoLancamento, string _comentario) {
-            setTitulo(_titulo);
-            setAnoLancamento(_anoLancamento);
-            setComentario(_comentario);
+            this.Titulo = _titulo;
+            this.AnoLancamento = _anoLancamento;
+            this.Comentario = _comentario;
         }
 
         public Item(string _titulo, int _anoLancamento) {
-            setTitulo(_titulo);
-            setAnoLancamento(_anoLancamento);
-        }
-
-        public void setTitulo(string _titulo) {
-            this.titulo = _titulo;
-        }
-
-        public void setAnoLancamento(int _anoLancamento) {
-            this.anoLancamento = _anoLancamento;
-        }
-
-        public void setComentario(string _comentario) {
-            this.comentario = _comentario;
-        }
-
-        public string getTitulo() {
-            return this.titulo;
-        }
-
-        public int getAnoLancamento() {
-            return this.anoLancamento;
-        }
-
-        public string getComentario() {
-            return this.comentario;
+            this.Titulo = _titulo;
+            this.AnoLancamento = _anoLancamento;
         }
 
         public abstract void ListaInformacoes();

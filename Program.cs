@@ -5,7 +5,6 @@ namespace poo {
     class Program {
         static void Main(string[] args) {
             Locadora loc = new Locadora();
-            Filme fil = new Filme();
 
             loc.novoDisco(new Disco("Samba Social Clube 5", 2014, "Vários Sambas", "Vários Artistas", 12, "CD"));
             loc.novoDisco(new Disco("Pode Entrar", 2009, "Ivete e Convidados", "Ivete Sangalo", 14, "DVD"));
